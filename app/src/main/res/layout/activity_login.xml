@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/libback2"
+
+    tools:context=".Activity.Activity.LoginActivity">
+    <ImageView
+        android:src="@drawable/library"
+        android:id="@+id/imgLayoutImage"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLayoutImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:hint="User Name"
+        android:background="@color/colortransparent"
+        android:textColorHint="#357EC7"
+        android:textColor="#357EC7"
+        android:maxLines="1"
+        android:maxLength="25"
+        />
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etusername"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colortransparent"
+        android:hint="Password"
+        android:textColorHint="#357EC7"
+        android:inputType="textPassword"
+        android:textColor="#357EC7"
+        android:maxLines="1"
+        android:maxLength="10"
+        />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/etpass"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colortransparent"
+        android:text="Login"
+        android:textColor="#357EC7"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnforgotpass"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnlogin"
+        android:background="@color/colortransparent"
+        android:layout_centerHorizontal="true"
+        android:text=" Forgot Password  "
+        android:textSize="10sp"
+        android:textColor="#357EC7"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Register your Account  "
+        android:textColor="#357EC7"
+        android:background="@color/colortransparent"
+        android:textSize="15sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/libback2"
+    tools:context=".Activity.Activity.RegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/book_app_icon_web"
+            android:id="@+id/imgLayoutImage"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+
+            android:id="@+id/etusernameregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLayoutImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="20"
+            />
+        <EditText
+
+            android:id="@+id/etnameregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etusernameregister"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Full name (Min 3 characters)"
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="10"
+            />
+
+        <EditText
+
+            android:id="@+id/etphnoregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etnameregister"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Mobile Number (10 digits)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="10"
+            />
+        <EditText
+            android:id="@+id/etemailidregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etphnoregister"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Email id"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="50"
+            />
+
+        <EditText
+            android:id="@+id/etpassregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etemailidregister"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Password"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:maxLength="10"
+            />
+        <EditText
+            android:id="@+id/etconfirmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etpassregister"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Confirm Password"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:maxLength="10"
+            />
+
+
+        <Button
+            android:id="@+id/btnRegisterdisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etconfirmpass"
+            android:layout_marginBottom="5dp"
+            android:text="Register"
+            android:textColor="#357EC7"
+            android:textSize="20sp"
+            android:background="@color/colortransparent"
+            />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Fragment.ProfileFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imgbtnprofile"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/book_app_icon_web"
+        android:layout_marginTop="20dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "User name"
+        android:layout_below="@+id/imgbtnprofile"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textblue"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/txtprofilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/profilename"
+        android:layout_below="@+id/txtusername"
+        android:textSize="20sp"
+        android:textColor="@color/textblue"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtemail"
+        android:layout_below="@+id/txtprofilename"
+        android:textColor="@color/textblue"
+        android:text=" Email id"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtphno"
+
+        android:layout_below="@+id/txtemail"
+        android:text=" Phone Number"
+        android:textColor="@color/textblue"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnmyboks"
+        android:background="@color/colortransparent"
+        android:layout_below="@+id/txtphno"
+        android:text="My Books"
+        android:textColor="@color/textblue"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+</RelativeLayout>

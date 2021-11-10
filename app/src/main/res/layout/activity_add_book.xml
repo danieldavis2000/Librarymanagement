@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/libback2"
+    tools:context=".Activity.Activity.AddBook">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/book_app_icon_web"
+            android:id="@+id/imgLayoutImage"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+
+            android:id="@+id/etbookid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLayoutImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Book ID"
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="10"
+            />
+        <EditText
+
+            android:id="@+id/etbookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etbookid"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Book Name "
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="30"
+            />
+        <EditText
+
+            android:id="@+id/etbookauthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etbookname"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Author"
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="20"
+            />
+
+        <EditText
+
+            android:id="@+id/etbookgenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etbookauthor"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="genre"
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+            android:maxLines="1"
+            android:maxLength="20"
+            />
+
+        <EditText
+
+            android:id="@+id/etbookdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etbookgenre"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColorHint="#357EC7"
+            android:textColor="#357EC7"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnaddbook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etbookdesc"
+            android:layout_marginBottom="5dp"
+            android:text="Add Book"
+            android:textColor="#357EC7"
+            android:textSize="20sp"
+            android:background="@color/colortransparent"
+            />
+    </RelativeLayout>
+
+
+</ScrollView>
